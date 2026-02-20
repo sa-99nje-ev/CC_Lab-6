@@ -28,7 +28,7 @@ pipeline {
                 docker run -d \
                   --name nginx-lb \
                   --network app-network \
-                  -p 80:80 \
+                  -p 8081:80 \
                   nginx
                 
                 sleep 2
